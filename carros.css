@@ -1,0 +1,208 @@
+/* =======================================================
+   🎮 GALERIA MODERNA ESTILO GAMER
+   Autor: Nicolas Marques (versão aprimorada)
+   ======================================================= */
+
+/* === VARIÁVEIS DE COR === */
+:root {
+    --color-primary: #00bfff; /* Azul neon principal */
+    --color-secondary: #0d0d0d; /* Fundo escuro */
+    --color-text-light: #e0f7fa; /* Texto suave */
+    --color-text-dark: #222;
+    --color-accent: #00ffff; /* Ciano brilhante */
+    --color-shadow: rgba(0, 191, 255, 0.3);
+}
+
+/* === RESET GLOBAL === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === BASE DO SITE === */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top, #101820 0%, #050505 100%);
+    color: var(--color-text-light);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* === CABEÇALHO === */
+header {
+    background: linear-gradient(90deg, #0d0d0d, #101820);
+    color: var(--color-accent);
+    padding: 25px 0;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 191, 255, 0.2);
+    border-bottom: 2px solid var(--color-primary);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 2.6em;
+    text-shadow: 0 0 15px var(--color-primary);
+}
+
+/* === CONTAINER PRINCIPAL === */
+.gallery-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* === GALERIA DE IMAGENS === */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    filter: brightness(0.9);
+}
+
+.gallery img:hover {
+    transform: scale(1.07);
+    filter: brightness(1.1);
+    border: 2px solid var(--color-accent);
+    box-shadow: 0 0 25px var(--color-shadow), 0 0 40px rgba(0, 191, 255, 0.1);
+}
+
+/* === MODAL === */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0.9) 60%, rgba(0, 0, 0, 1));
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    backdrop-filter: blur(8px);
+}
+
+.modal.show {
+    display: flex;
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+/* === CONTEÚDO DO MODAL === */
+.modal-content-wrapper {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    display: block;
+    max-width: 95%;
+    max-height: 90vh;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0, 191, 255, 0.4);
+    animation: zoomIn 0.3s ease forwards;
+}
+
+/* === ANIMAÇÕES === */
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* === BOTÃO FECHAR === */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: var(--color-accent);
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 10px var(--color-primary);
+}
+
+.close:hover {
+    color: #fff;
+    transform: rotate(90deg);
+}
+
+/* === LEGENDA === */
+#caption {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.1em;
+    color: var(--color-accent);
+    text-shadow: 0 0 8px var(--color-primary);
+}
+
+/* === NAVEGAÇÃO (SETAS) === */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 18px;
+    color: var(--color-accent);
+    font-weight: bold;
+    font-size: 22px;
+    border-radius: 50%;
+    background: rgba(0, 191, 255, 0.15);
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.prev { left: 25px; }
+.next { right: 25px; }
+
+.prev:hover, .next:hover {
+    background: rgba(0, 191, 255, 0.3);
+    transform: scale(1.1);
+}
+
+/* === RESPONSIVIDADE === */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+    .gallery img {
+        height: 180px;
+    }
+    .prev, .next {
+        padding: 12px;
+        font-size: 18px;
+    }
+}
+
+/* === RODAPÉ (OPCIONAL) === */
+footer {
+    text-align: center;
+    color: #aaa;
+    margin-top: 40px;
+    padding: 15px 0;
+    font-size: 0.9rem;
+}

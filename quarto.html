@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUARTO - ALA 9</title>
+    <link rel="stylesheet" href="quarto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1>QUARTO - ALA 9</h1>
+    </header>
+
+    <main class="gallery-container">
+        <div class="gallery">
+            <!-- As imagens serão inseridas aqui dinamicamente pelo script.js -->
+        </div>
+    </main>
+
+    <!-- O Modal (Lightbox) -->
+    <div id="imageModal" class="modal">
+        <!-- Botão de fechar -->
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <!-- Conteúdo do Modal (Imagem) -->
+        <div class="modal-content-wrapper">
+            <!-- Botão Anterior -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            
+            <!-- Imagem -->
+            <img class="modal-content" id="img01">
+            
+            <!-- Botão Próximo -->
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        
+        <!-- Legenda da Imagem -->
+        <div id="caption"></div>
+    </div>
+
+    <script src="quarto.js"></script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+// Lista de nomes de arquivos de imagem
+const imageFiles = [
+    "1756578540997.png",
+    "1756578541171.png",
+    "1756578565775.png",
+    "1756578603416.png",
+    "1756579441036.png",
+    "1756581450445.png",
+    "1756654770783.png",
+    "1756654803635.png",
+    "1756654803973.png",
+    "1756656131837.png",
+    "1756656150543.png",
+    "1756656165720.png",
+    "1756656189685.png",
+    "1756656192518.png",
+    "1756658472900.png",
+    "1756665432849.png",
+    "1756665439305.png",
+    "1756665466287.png",
+    "1756689117867.png",
+    "1756689142775.png",
+    "1756897805413.png",
+    "1756897810035.png",
+    "1756897813645.png",
+    "1756897835382.png",
+    "1756897840133.png",
+    "1756897845883.png",
+    "1756903934806.png",
+    "1756903940629.png",
+    "1756903949534.png",
+    "1756903949594.png",
+    "1756914923411.png",
+    "1756914923799.png",
+    "1756914934121.png",
+    "1756914942323.png",
+    "1756914944392.png",
+    "1756914946486.png",
+    "1756914989030.png",
+    "1756914990042.png",
+    "1756915017183.png",
+    "1756915018896.png",
+    "1756915049500.png",
+    "1757024325295.png",
+    "1757024465075.png",
+    "1757024523293.png",
+    "1757024528037.png",
+    "1757024532142.png",
+    "1757024538829.png",
+    "1757024538900.png",
+    "1757024539055.png",
+    "1757024563926.png",
+    "1757024570268.png",
+    "1757024576099.png",
+    "1757024597893.png",
+    "1757024601518.png",
+    "1757024606935.png",
+    "1757024607716.png",
+    "1757024621901.png",
+    "1757024642306.png",
+    "1757024647369.png",
+    "1757024669774.png",
+    "1757024687687.png",
+    "1757514643831 .,.,.,.,.,.png",
+    "1757514650859.png",
+    "1757514657101.png",
+    "1757514668873.png",
+    "1757514675816.png",
+    "1757514678071.png",
+    "1757514682264.png",
+    "1757514697072.png",
+    "1757514703261.png",
+    "1757514704120.png",
+    "1757514716522.png",
+    "1757514719340.png",
+    "1757514725634.png",
+    "1757514729109.png",
+    "1757514749564.png",
+    "1757514781963.png",
+    "1757514800600.png",
+    "1757514802047.png",
+    "1757514821302.png",
+    "1757514834233.png",
+    "1757514840132.png",
+    "1757514861233.png",
+    "1757514861749.png",
+    "1757514863807.png",
+    "1757514899883.png",
+    "1757514903429.png",
+    "1757514906088.png",
+    "1757514919787.png",
+    "1757514924048.png",
+    "1757514928213.png",
+    "1757514943508.png",
+    "1757514946261.png",
+    "1757514950494.png",
+    "1757514979582.png",
+    "1757514984497.png",
+    "1757515004567.png",
+    "1757515020134.png",
+    "1757515021726.png",
+    "1757515024504.png",
+    "1757515026797.png",
+    "1757515043117.png",
+    "1757515049252.png",
+    "1757515678356.png",
+    "1757515695325.png",
+    "1757515699577.png",
+    "1757515703284.png",
+    "1757515722272.png",
+    "1757516775269.png",
+    "1757516776950.png",
+    "1757516782516.png",
+    "1757516782859.png",
+    "1757516807146.png",
+    "1757516810421.png",
+    "1757516829862.png",
+    "1757516844311.png",
+    "1757516845198.png",
+    "1757516846925.png",
+    "1757516865604.png",
+    "1757516870905.png",
+    "1757516876013.png",
+    "1757517038092.png",
+    "1757517043286.png",
+    "1757517109826.png",
+    "1757517115419.png",
+    "1757517126392.png",
+    "1757517128986.png",
+    "1757517134330.png",
+    "1757517136357.png",
+    "1757517158710.png",
+    "1757519079028 ,.,.,.,.,.png",
+    "1757519095461.png",
+    "1757519104521.png",
+    "1757519129094.png",
+    "1757519157896.png",
+    "1757519171343.png",
+    "1757519173619.png",
+    "1757519190367.png",
+    "1757953811724 ,.,.,,..png",
+    "1757953817740.png",
+    "1757953817811.png",
+    "1757953843100.png",
+    "1757953844094.png",
+    "1757953844622.png",
+    "1757953854046.png",
+    "1757953857747.png",
+    "1757953863404.png",
+    "1757953883287.png",
+    "1757953921244.png",
+    "1757953938624.png",
+    "1757953941595.png",
+    "1757953964470.png",
+    "1757953990084.png",
+    "1757954041054.png",
+    "1757954086304.png",
+    "1757954093580.png",
+    "1757957506500.png",
+    "1757957516108.png",
+    "1757957534623.png",
+    "1757957542168.png",
+    "1758104292982 .,.,.,.,,..png",
+    "1758104308783.png",
+    "1758104314275.png",
+    "1758104320121.png",
+    "1758104418903.png",
+    "1758104421197.png",
+    "1758104446478.png",
+    "1758194547053 ,.,.,.,..png",
+    "1758194549629.png",
+    "1758194556206.png",
+    "1758194579097.png",
+    "1758194595005.png",
+    "1758194603415.png",
+    "1758194622600.png",
+    "1758194645727.png",
+    "1758194648564.png"
+];
+
+// Seleciona elementos principais
+const galleryDiv = document.querySelector(".gallery");
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("img01");
+const captionText = document.getElementById("caption");
+
+let currentImageIndex = 0;
+let galleryImages = []; // Array para armazenar os elementos <img> criados
+
+// Função para carregar e exibir as imagens na galeria
+function loadGallery() {
+    if (!galleryDiv) return;
+
+    imageFiles.forEach((fileName, index) => {
+        // Remove caracteres inválidos para o atributo alt
+        const altText = `Imagem ${index + 1} - ${fileName.replace(/[^a-zA-Z0-9\s\.]/g, '').replace(/\.png$/, '')}`;
+        
+        const img = document.createElement('img');
+        img.src = `images/${fileName}`;
+        img.alt = altText;
+        img.onclick = function() {
+            openModal(this);
+        };
+        galleryDiv.appendChild(img);
+    });
+
+    // Atualiza a lista de elementos <img> após a criação
+    galleryImages = Array.from(document.querySelectorAll(".gallery img"));
+}
+
+// Função para abrir o modal
+function openModal(element) {
+  if (!modal || !modalImg || !element) return;
+
+  // Encontra o índice da imagem clicada
+  currentImageIndex = galleryImages.indexOf(element);
+
+  // Exibe a imagem no modal
+  showSlides(currentImageIndex);
+
+  modal.style.display = "flex";
+  // Força o reflow para garantir que a transição de opacidade funcione
+  void modal.offsetWidth; 
+  modal.classList.add("show");
+  document.body.style.overflow = "hidden";
+}
+
+// Função para fechar o modal
+function closeModal() {
+  if (!modal) return;
+  modal.classList.remove("show");
+  document.body.style.overflow = "";
+  // Espera a animação de fade-out terminar antes de esconder o modal
+  setTimeout(() => {
+    modal.style.display = "none";
+    modalImg.src = "";
+    captionText.innerHTML = "";
+  }, 300); // Tempo da animação CSS
+}
+
+// Função para mostrar a imagem atual
+function showSlides(n) {
+    if (n >= galleryImages.length) {
+        currentImageIndex = 0; // Volta para a primeira imagem
+    } else if (n < 0) {
+        currentImageIndex = galleryImages.length - 1; // Vai para a última imagem
+    } else {
+        currentImageIndex = n;
+    }
+
+    const currentImage = galleryImages[currentImageIndex];
+    modalImg.src = currentImage.src;
+    captionText.innerHTML = currentImage.alt;
+}
+
+// Função para avançar/voltar slides
+function plusSlides(n) {
+    showSlides(currentImageIndex + n);
+}
+
+// Evento para clicar fora do conteúdo e fechar
+window.addEventListener("click", (e) => {
+  // Verifica se o clique foi no fundo do modal, mas não no conteúdo interno
+  if (e.target === modal) closeModal();
+});
+
+// Fecha o modal ao pressionar ESC
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && modal.classList.contains("show")) closeModal();
+});
+
+// Adiciona a função plusSlides ao escopo global para ser chamada pelo HTML
+window.plusSlides = plusSlides;
+window.openModal = openModal;
+window.closeModal = closeModal;
+
+// Carrega a galeria quando o DOM estiver pronto
+document.addEventListener('DOMContentLoaded', loadGallery);

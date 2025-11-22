@@ -1,0 +1,210 @@
+/* =======================================================
+   🎮 GALERIA MODERNA ESTILO NINJA - ALA 7
+   ======================================================= */
+
+/* === VARIÁVEIS DE COR (VERMELHO NEON E PRETO) === */
+:root {
+    --color-primary: #ff073a; /* Vermelho Neon Principal */
+    --color-secondary: #0a0a0a; /* Fundo Preto Profundo */
+    --color-text-light: #f0f0f0; /* Texto suave */
+    --color-text-dark: #222;
+    --color-accent: #ff4d4d; /* Vermelho Brilhante */
+    --color-shadow: rgba(255, 7, 58, 0.5); /* Sombra Vermelha Neon */
+}
+
+/* === RESET GLOBAL === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === BASE DO SITE === */
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Fundo com gradiente radial para um efeito mais dramático */
+    background: radial-gradient(circle at top, #1a0000 0%, #000000 100%);
+    color: var(--color-text-light);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* === CABEÇALHO === */
+header {
+    background: linear-gradient(90deg, #0a0a0a, #1a0000);
+    color: var(--color-accent);
+    padding: 25px 0;
+    text-align: center;
+    /* Sombra com o efeito neon vermelho */
+    box-shadow: 0 4px 20px rgba(255, 7, 58, 0.3);
+    border-bottom: 2px solid var(--color-primary);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 2.8em;
+    /* Efeito neon no título */
+    text-shadow: 0 0 15px var(--color-primary), 0 0 25px var(--color-accent);
+}
+
+/* === CONTAINER PRINCIPAL === */
+.gallery-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* === GALERIA DE IMAGENS === */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    filter: brightness(0.8);
+}
+
+.gallery img:hover {
+    transform: scale(1.07);
+    filter: brightness(1.1);
+    border: 2px solid var(--color-accent);
+    /* Efeito de brilho neon ao passar o mouse */
+    box-shadow: 0 0 25px var(--color-shadow), 0 0 40px rgba(255, 7, 58, 0.15);
+}
+
+/* === MODAL === */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    /* Fundo escuro com leve brilho neon */
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0.95) 60%, rgba(0, 0, 0, 1));
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    backdrop-filter: blur(8px);
+}
+
+.modal.show {
+    display: flex;
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+/* === CONTEÚDO DO MODAL === */
+.modal-content-wrapper {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    display: block;
+    max-width: 95%;
+    max-height: 90vh;
+    border-radius: 10px;
+    /* Borda e sombra neon na imagem ampliada */
+    border: 3px solid var(--color-accent);
+    box-shadow: 0 0 40px rgba(255, 7, 58, 0.6);
+    animation: zoomIn 0.3s ease forwards;
+}
+
+/* === ANIMAÇÕES === */
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* === BOTÃO FECHAR === */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: var(--color-accent);
+    font-size: 45px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* Efeito neon no X de fechar */
+    text-shadow: 0 0 15px var(--color-primary);
+}
+
+.close:hover {
+    color: #fff;
+    transform: rotate(90deg) scale(1.1);
+}
+
+/* === LEGENDA === */
+#caption {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1.2em;
+    color: var(--color-accent);
+    /* Efeito neon na legenda */
+    text-shadow: 0 0 10px var(--color-primary);
+}
+
+/* === NAVEGAÇÃO (SETAS) === */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 20px;
+    color: var(--color-accent);
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 50%;
+    /* Fundo semi-transparente com cor neon */
+    background: rgba(255, 7, 58, 0.15);
+    transition: all 0.3s ease;
+    user-select: none;
+    text-shadow: 0 0 8px var(--color-primary);
+}
+
+.prev { left: 25px; }
+.next { right: 25px; }
+
+.prev:hover, .next:hover {
+    background: rgba(255, 7, 58, 0.3);
+    transform: scale(1.1);
+    color: #fff;
+}
+
+/* === RESPONSIVIDADE === */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.0em;
+    }
+    .gallery img {
+        height: 180px;
+    }
+    .prev, .next {
+        padding: 12px;
+        font-size: 18px;
+    }
+}
