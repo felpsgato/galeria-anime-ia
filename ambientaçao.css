@@ -1,0 +1,192 @@
+/* Variáveis de Cores */
+:root {
+    --color-primary: #00aaff; /* Azul moderno */
+    --color-secondary: #1a1a1a; /* Preto/Fundo escuro */
+    --color-text-light: #f0f0f0; /* Texto claro */
+    --color-text-dark: #333; /* Texto escuro (para contraste em elementos claros) */
+    --color-accent: #00bfff; /* Azul mais claro para destaque */
+}
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--color-secondary);
+    color: var(--color-text-light);
+    line-height: 1.6;
+    padding-bottom: 50px; /* Espaço para o rodapé, se houver */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #0d0d0d;
+    color: var(--color-primary);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Container Principal */
+.gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Galeria de Imagens (Grid Responsivo) */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px; /* Altura fixa para uniformidade */
+    object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid var(--color-secondary); /* Borda para contraste */
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+/* Modal (Lightbox) */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.95); /* Fundo preto semi-transparente */
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.modal.show {
+    display: flex;
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Conteúdo do Modal (Imagem) */
+.modal-content-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: auto;
+    max-width: 90%;
+    max-height: 90vh;
+    border-radius: 5px;
+    animation-name: zoom;
+    animation-duration: 0.3s;
+}
+
+@keyframes zoom {
+    from {transform: scale(0.8)} 
+    to {transform: scale(1)}
+}
+
+/* Botão de Fechar */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: var(--color-primary);
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    z-index: 1001; /* Acima de tudo */
+}
+
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Legenda da Imagem */
+#caption {
+    margin: 10px auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: var(--color-primary);
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Botões de Navegação */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+/* Responsividade */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+    header h1 {
+        font-size: 1.8em;
+    }
+    .prev, .next {
+        font-size: 16px;
+        padding: 10px;
+        margin-top: -30px;
+    }
+}

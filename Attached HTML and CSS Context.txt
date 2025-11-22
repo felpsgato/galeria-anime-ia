@@ -1,0 +1,206 @@
+Attached HTML and CSS Context
+
+<html lang="pt-BR"><head><script type="text/javascript" src="/___vscode_livepreview_injected_script"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIDADE - ALA 4</title>
+    <link rel="stylesheet" href="cidade.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body style="">
+
+    <header>
+        <h1>CIDADE - ALA 4</h1>
+    </header>
+
+    <main class="gallery-container">
+        <!-- As imagens serão inseridas aqui -->
+        <div class="gallery">
+            <img src="images/1756505306551.png" alt="Imagem 1" onclick="openModal(this)">
+            <img src="images/1756505310372.png" alt="Imagem 2" onclick="openModal(this)">
+            <img src="images/1756505359734.png" alt="Imagem 3" onclick="openModal(this)">
+            <img src="images/1756506351799.png" alt="Imagem 4" onclick="openModal(this)">
+            <img src="images/1756506352565.png" alt="Imagem 5" onclick="openModal(this)">
+            <img src="images/1756506355113.png" alt="Imagem 6" onclick="openModal(this)">
+            <img src="images/1756518163828.png" alt="Imagem 7" onclick="openModal(this)">
+            <img src="images/1756549618010.png" alt="Imagem 8" onclick="openModal(this)">
+            <img src="images/1756549634459.png" alt="Imagem 9" onclick="openModal(this)">
+            <img src="images/1756549730466.png" alt="Imagem 10" onclick="openModal(this)">
+            <img src="images/1756550369570.png" alt="Imagem 11" onclick="openModal(this)">
+            <img src="images/1756550426638.png" alt="Imagem 12" onclick="openModal(this)">
+            <img src="images/1756566145084.png" alt="Imagem 13" onclick="openModal(this)">
+            <img src="images/1756567587920.png" alt="Imagem 14" onclick="openModal(this)">
+            <img src="images/1756567595162.png" alt="Imagem 15" onclick="openModal(this)">
+            <img src="images/1756603576871.png" alt="Imagem 16" onclick="openModal(this)">
+            <img src="images/1756603590924.png" alt="Imagem 17" onclick="openModal(this)">
+            <img src="images/1756603599653.png" alt="Imagem 18" onclick="openModal(this)">
+            <img src="images/1756603711114.png" alt="Imagem 19" onclick="openModal(this)">
+            <img src="images/1756656243585.png" alt="Imagem 20" onclick="openModal(this)">
+            <img src="images/1756656250491.png" alt="Imagem 21" onclick="openModal(this)">
+            <img src="images/1756656302771.png" alt="Imagem 22" onclick="openModal(this)">
+            <img src="images/1756656305478.png" alt="Imagem 23" onclick="openModal(this)">
+            <img src="images/1756656310794.png" alt="Imagem 24" onclick="openModal(this)">
+            <img src="images/1756657019950.png" alt="Imagem 25" onclick="openModal(this)">
+            <img src="images/1756657022608.png" alt="Imagem 26" onclick="openModal(this)">
+            <img src="images/1756657028218.png" alt="Imagem 27" onclick="openModal(this)">
+            <img src="images/1756657055359.png" alt="Imagem 28" onclick="openModal(this)">
+            <img src="images/1756657055707.png" alt="Imagem 29" onclick="openModal(this)">
+            <img src="images/1756657063983.png" alt="Imagem 30" onclick="openModal(this)">
+            <img src="images/1756941912316.png" alt="Imagem 31" onclick="openModal(this)">
+            <img src="images/1756941919618.png" alt="Imagem 32" onclick="openModal(this)">
+            <img src="images/1756941929502.png" alt="Imagem 33" onclick="openModal(this)">
+            <img src="images/1756941936278.png" alt="Imagem 34" onclick="openModal(this)">
+            <img src="images/1756941947163.png" alt="Imagem 35" onclick="openModal(this)">
+            <img src="images/1756941984586.png" alt="Imagem 36" onclick="openModal(this)">
+            <img src="images/1756941987647.png" alt="Imagem 37" onclick="openModal(this)">
+            <img src="images/1756941996511.png" alt="Imagem 38" onclick="openModal(this)">
+            <img src="images/1756941999159.png" alt="Imagem 39" onclick="openModal(this)">
+            <img src="images/1756942001473.png" alt="Imagem 40" onclick="openModal(this)">
+            <img src="images/1756942013915.png" alt="Imagem 41" onclick="openModal(this)">
+            <img src="images/1757173955756.png" alt="Imagem 42" onclick="openModal(this)">
+            <img src="images/1757173956489.png" alt="Imagem 43" onclick="openModal(this)">
+            <img src="images/1757433540817.png" alt="Imagem 44" onclick="openModal(this)">
+            <img src="images/1757433552506.png" alt="Imagem 45" onclick="openModal(this)">
+            <img src="images/1757434604197.png" alt="Imagem 46" onclick="openModal(this)">
+            <img src="images/1757434621073.png" alt="Imagem 47" onclick="openModal(this)">
+            <img src="images/1757434625548.png" alt="Imagem 48" onclick="openModal(this)">
+            <img src="images/1757434669275.png" alt="Imagem 49" onclick="openModal(this)">
+            <img src="images/1757434696656.png" alt="Imagem 50" onclick="openModal(this)">
+            <img src="images/1757442799004.png" alt="Imagem 51" onclick="openModal(this)">
+            <img src="images/1757442807389.png" alt="Imagem 52" onclick="openModal(this)">
+            <img src="images/1757442813909.png" alt="Imagem 53" onclick="openModal(this)">
+            <img src="images/1757442813996.png" alt="Imagem 54" onclick="openModal(this)">
+            <img src="images/1757442816378.png" alt="Imagem 55" onclick="openModal(this)">
+            <img src="images/1757442834852.png" alt="Imagem 56" onclick="openModal(this)">
+            <img src="images/1757442839361.png" alt="Imagem 57" onclick="openModal(this)">
+            <img src="images/1757442840668.png" alt="Imagem 58" onclick="openModal(this)">
+            <img src="images/1757467861671.png" alt="Imagem 59" onclick="openModal(this)">
+            <img src="images/1757467872309.png" alt="Imagem 60" onclick="openModal(this)">
+            <img src="images/1757467905017.png" alt="Imagem 61" onclick="openModal(this)">
+            <img src="images/1757467906784.png" alt="Imagem 62" onclick="openModal(this)">
+            <img src="images/1757467911079.png" alt="Imagem 63" onclick="openModal(this)">
+            <img src="images/1757468127818.png" alt="Imagem 64" onclick="openModal(this)">
+            <img src="images/1757468134974.png" alt="Imagem 65" onclick="openModal(this)">
+            <img src="images/1757468135642.png" alt="Imagem 66" onclick="openModal(this)">
+            <img src="images/1757468160513.png" alt="Imagem 67" onclick="openModal(this)">
+            <img src="images/1757469305772.png" alt="Imagem 68" onclick="openModal(this)">
+            <img src="images/1757469311029.png" alt="Imagem 69" onclick="openModal(this)">
+            <img src="images/1757469312918.png" alt="Imagem 70" onclick="openModal(this)">
+            <img src="images/1757469333283.png" alt="Imagem 71" onclick="openModal(this)">
+            <img src="images/1757469344499.png" alt="Imagem 72" onclick="openModal(this)">
+            <img src="images/1757469351438.png" alt="Imagem 73" onclick="openModal(this)">
+            <img src="images/1757469358101.png" alt="Imagem 74" onclick="openModal(this)">
+            <img src="images/1757469379608.png" alt="Imagem 75" onclick="openModal(this)">
+            <img src="images/1757469382567.png" alt="Imagem 76" onclick="openModal(this)">
+            <img src="images/1757512190918.png" alt="Imagem 77" onclick="openModal(this)">
+            <img src="images/1757512193770.png" alt="Imagem 78" onclick="openModal(this)">
+            <img src="images/1757512195870.png" alt="Imagem 79" onclick="openModal(this)">
+            <img src="images/1757512208493.png" alt="Imagem 80" onclick="openModal(this)">
+            <img src="images/1757512221699.png" alt="Imagem 81" onclick="openModal(this)">
+            <img src="images/1757512226265.png" alt="Imagem 82" onclick="openModal(this)">
+            <img src="images/1757512228209.png" alt="Imagem 83" onclick="openModal(this)">
+            <img src="images/1757512262745.png" alt="Imagem 84" onclick="openModal(this)">
+            <img src="images/1757512290941.png" alt="Imagem 85" onclick="openModal(this)">
+            <img src="images/1757512336979.png" alt="Imagem 86" onclick="openModal(this)">
+            <img src="images/1757512339246.png" alt="Imagem 87" onclick="openModal(this)">
+            <img src="images/1757512348635.png" alt="Imagem 88" onclick="openModal(this)">
+            <img src="images/1757512353597.png" alt="Imagem 89" onclick="openModal(this)">
+            <img src="images/1757512353666.png" alt="Imagem 90" onclick="openModal(this)">
+            <img src="images/1757512399182.png" alt="Imagem 91" onclick="openModal(this)">
+            <img src="images/1757512404040.png" alt="Imagem 92" onclick="openModal(this)">
+            <img src="images/1757512449577.png" alt="Imagem 93" onclick="openModal(this)">
+            <img src="images/1757512522823.png" alt="Imagem 94" onclick="openModal(this)">
+            <img src="images/1757512529066.png" alt="Imagem 95" onclick="openModal(this)">
+            <img src="images/1757512536088.png" alt="Imagem 96" onclick="openModal(this)">
+            <img src="images/1757512572922.png" alt="Imagem 97" onclick="openModal(this)">
+            <img src="images/1757512575688.png" alt="Imagem 98" onclick="openModal(this)">
+            <img src="images/EcGRafGUEAEmKPv.jpg" alt="Imagem 99" onclick="openModal(this)">
+        </div>
+    </main>
+
+    <!-- O Modal (Lightbox) -->
+    <div id="imageModal" class="modal" style="display: none;">
+        <!-- Botão de fechar -->
+        <span class="close">×</span>
+
+        <!-- Conteúdo do Modal (Imagem) -->
+        <div class="modal-content-wrapper">
+            <!-- Botão Anterior -->
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            
+            <!-- Imagem -->
+            <img class="modal-content" id="img01" src="">
+            
+            <!-- Botão Próximo -->
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        
+        <!-- Legenda da Imagem -->
+        <div id="caption"></div>
+    </div>
+
+    <script src="cidade.js"></script>
+
+
+</body></html>
+
+
+/* Matched Rule from user-agent */
+html {
+  display: block;
+}
+
+/* Matched Rule from user-agent */
+:root {
+  view-transition-name: root;
+}
+
+/* Matched Rule from regular */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  box-sizing: border-box;
+}
+
+/* Matched Rule from regular */
+:root {
+  --color-primary: rgb(155, 155, 155);
+  --color-secondary: #0d0d0d;
+  --color-text-light: #e0f7fa;
+  --color-text-dark: #222;
+  --color-accent: #ffffff;
+  --color-shadow: rgba(0, 191, 255, 0.3);
+  --color-primary: rgb(155, 155, 155);
+  --color-secondary: #0d0d0d;
+  --color-text-light: #e0f7fa;
+  --color-text-dark: #222;
+  --color-accent: #ffffff;
+  --color-shadow: rgba(0, 191, 255, 0.3);
+}
+
+/* Matched Rule from regular */
+:host, :root {
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+}
+
+/* Matched Rule from regular */
+:host, :root {
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+}
+
+/* Matched Rule from regular */
+:host, :root {
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+}
